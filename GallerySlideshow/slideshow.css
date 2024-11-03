@@ -1,0 +1,79 @@
+.slider {
+    width: 50%;
+    border: 1px solid red;
+    transition: height 1s linear;
+    height: 0;
+}
+
+.slider .slider-image {
+    position: relative;
+    width: 100%;
+}
+
+.slider .slider-image-container
+{
+    display: flex;
+    width: inherit;
+}
+
+.slider .slider-image .slider-image-container img {
+    width: inherit;
+    display: block;
+    flex: 0;
+}
+
+.slider .slider-image .slider-image-container img.active
+{
+    flex: 1;
+    width: 600px;
+    height: 600px;
+}
+
+.slider .slider-image .slider-arrow-right {
+    right: 0;
+}
+
+.slider .slider-image .slider-arrow-left {
+    left: 0;
+}
+
+.slider .slider-image .slider-arrow-left,
+.slider .slider-image .slider-arrow-right {
+    position: absolute;
+    top: 50%;
+    color: white;
+    background-color: red;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid white;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+
+.slider .slider-navigation
+{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.slider .slider-navigation > .slider-dot
+{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: red;
+    cursor: pointer;
+}
+
+.slider .slider-navigation > .slider-dot.active
+{
+    background-color: darkorange;
+}

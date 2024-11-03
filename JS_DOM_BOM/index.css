@@ -1,0 +1,29 @@
+#cont1
+{
+    width: 8rem;
+    height: 8rem;
+    background-color: #509e2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont2
+{
+    width: 6rem;
+    height: 6rem;
+    background-color: #ef3340;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont3
+{
+    width: 4rem;
+    height: 4rem;
+    background-color: #00b5e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
