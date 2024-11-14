@@ -1,0 +1,15 @@
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\bin\Debug\net8.0\ColorBackend.exe
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\bin\Debug\net8.0\ColorBackend.deps.json
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\bin\Debug\net8.0\ColorBackend.runtimeconfig.json
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\bin\Debug\net8.0\ColorBackend.dll
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\bin\Debug\net8.0\ColorBackend.pdb
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\obj\Debug\net8.0\ColorBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\obj\Debug\net8.0\ColorBackend.AssemblyInfoInputs.cache
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\obj\Debug\net8.0\ColorBackend.AssemblyInfo.cs
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\obj\Debug\net8.0\ColorBackend.csproj.CoreCompileInputs.cache
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\obj\Debug\net8.0\ColorBackend.sourcelink.json
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\obj\Debug\net8.0\ColorBackend.dll
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\obj\Debug\net8.0\refint\ColorBackend.dll
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\obj\Debug\net8.0\ColorBackend.pdb
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\obj\Debug\net8.0\ColorBackend.genruntimeconfig.cache
+C:\Users\Alex\WebstormProjects\FBES_1_23_3_ru_JS\ColorBackend\obj\Debug\net8.0\ref\ColorBackend.dll
