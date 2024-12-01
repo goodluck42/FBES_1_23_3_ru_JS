@@ -1,0 +1,12 @@
+﻿@model Account 
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div>Login: @(Model?.Username ?? "No login")</div>
+    <div>Password: @(Model?.Password ?? "No password")</div>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

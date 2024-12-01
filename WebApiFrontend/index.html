@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WebApiFrontend</title>
+	<style>
+        body {
+            font-family: Tahoma, sans-serif;
+        }
+	</style>
+	<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const getUsersButton = document.getElementById("get-users");
+            const addUserButton = document.getElementById("add-user");
+            const removeUserButton = document.getElementById("remove-user");
+            const table = document.querySelector("#data tbody");
+            const userLoginInput = document.querySelector("#user-login");
+            const userPasswordInput = document.querySelector("#user-password");
+            const userIdToRemoveInput = document.querySelector("#user-to-remove-id");
+
+            getUsersButton.addEventListener("click", async function () {
+                const result = await fetch("http://localhost:5231/users");
+                const users = await result.json();
+
+                table.innerHTML = "";
+
+                for (const user of users) {
+                    const tr = createTableRow(user.id, user.login);
+
+                    table.appendChild(tr);
+                }
+            });
+
+            addUserButton.addEventListener("click", async function () {
+                const user = {
+                    login: userLoginInput.value,
+                    password: userPasswordInput.value
+                };
+
+                const result = await fetch("http://localhost:5231/users", {
+                    method: "POST",
+                    body: JSON.stringify(user),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                });
+
+                try {
+                    console.log(await result.json());
+                } catch (e) {
+                    console.log(e);
+                }
+            });
+
+            removeUserButton.addEventListener("click", async function () {
+                const id = userIdToRemoveInput.value;
+                const result = await fetch(`http://localhost:5231/users/${id}`, {
+                    method: "DELETE"
+                });
+
+                try {
+                    console.log(await result.json());
+                } catch (e) {
+                    console.log(e);
+                }
+            });
+        });
+
+        function createTableRow(id, login) {
+            const tr = document.createElement("tr");
+            const idTd = document.createElement("td");
+            const loginTd = document.createElement("td");
+
+            idTd.innerText = id;
+            loginTd.innerText = login;
+
+            tr.appendChild(idTd);
+            tr.appendChild(loginTd);
+
+            return tr;
+        }
+	</script>
+</head>
+<body>
+<div>
+	<table id="data">
+		<thead>
+		<tr>
+			<th>Id</th>
+			<th>Login</th>
+		</tr>
+		</thead>
+		<tbody>
+
+		</tbody>
+
+	</table>
+	<div>
+		<input id="get-users" type="button" value="Get Users">
+		<input id="add-user" type="button" value="Add User">
+
+		<input id="remove-user" type="button" value="Remove User">
+		<div>
+			<input id="user-login" type="text" placeholder="Login"/>
+			<input id="user-password" type="password" placeholder="Password"/>
+			<input id="user-to-remove-id" type="text" placeholder="User Id To Remove">
+		</div>
+	</div>
+</div>
+</body>
+</html>

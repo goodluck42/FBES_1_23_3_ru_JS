@@ -1,0 +1,17 @@
+###
+@WebAPIApplication_HostAddress = http://localhost:5231
+
+###
+GET {{WebAPIApplication_HostAddress}}/users
+
+###
+
+POST {{WebAPIApplication_HostAddress}}/users
+Content-Type: application/json
+
+{
+    "Login": "myLogin2",
+    "Password": "qwerty2"
+}
+###
+DELETE {{WebAPIApplication_HostAddress}}/users/1 
